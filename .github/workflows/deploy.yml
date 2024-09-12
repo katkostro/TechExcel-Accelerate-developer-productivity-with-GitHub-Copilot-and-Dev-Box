@@ -37,3 +37,4 @@ jobs:
         resourceGroupName: ${{ secrets.AZURE_RG }}
         template: ./InfrastructureAsCode/main.bicep
         parameters: environment=${{ github.event.inputs.appenv }}
+        scope: 'resource-group'
